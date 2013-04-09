@@ -109,3 +109,6 @@ Django will be installed to the "python2x/site-packages" folder.  To test the dj
 >>> django.VERSION
 (1, 1, 0, 'final', 1)
 ```
+
+##Starting a Project
+Once you’ve installed Python and Django, it's time to start you own project.
