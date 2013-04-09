@@ -4,7 +4,7 @@ Django is a prominent member of the new generation of Web frameworks.
 
 The old approach to developing dynamic web pages is to use straight cgi scripting to print html lines.
 
-```
+```py
 #!/usr/bin/env python
 
 import MySQLdb
@@ -36,7 +36,7 @@ The best approach to python web development is to use Django, where we split the
 * urls.py
 
 ###model.py (Model)
-```
+```py
 from django.db import models
 
 class User(models.Model):
@@ -46,7 +46,7 @@ class User(models.Model):
 ```
 
 ###views.py (View)
-```
+```py
 from django.shortcuts import render_to_response
 from models import User
 
@@ -56,7 +56,7 @@ def get_users(request):
 ```
 
 ###urls.py (Router or Controller)
-```
+```py
 from django.conf.urls.defaults import *
 import views
 
@@ -99,7 +99,7 @@ and additional language features you might like to use in your applications.
 
 ###Installing Django [(https://www.djangoproject.com/download/)](https://www.djangoproject.com/download/)
 There are two versions available to you: Lastest official release and the bleeding-edge version.  It recommended that you download the official release.  Unzip the compressed file to a directory and run the following python command: 
-```py
+```bash
 sudo python setup.py install
 ```
 Django will be installed to the "python2x/site-packages" folder.  To test the django installation run the following in the python interpreter:
