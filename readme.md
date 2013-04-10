@@ -111,4 +111,17 @@ Django will be installed to the "python2x/site-packages" folder.  To test the dj
 ```
 
 ##Starting a Project
-Once you’ve installed Python and Django, it's time to start you own project.
+Once you’ve installed Python and Django, it's time to start you own project.  Create a folder for your project and run the following command in the project folder:
+
+```py
+python <location>/django-admin.py startproject myfirst
+```
+
+##Running the Development Server
+To start the server, change into your project directory (cd myfirst), if you haven’t already, and run this command:
+
+```py
+python manage.py runserver
+```
+
+This launches the server locally, on port 8000, accessible only to connections from your own computer. Now that it’s running, visit http://127.0.0.1:8000/ with your Web browser. You’ll see a “Welcome to Django” page shaded in a pleasant pastel blue. It worked!
